@@ -6,8 +6,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-"colorscheme wombat
-colorscheme Tomorrow-Night-Bright
+colorscheme wombat256mod
+"colorscheme desert
+"colorscheme railscasts
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -22,6 +23,8 @@ set softtabstop=2
 set expandtab
 set autoindent
 set nobackup
+set number
+set paste
 
 if v:version >= 703
     "undo settings
@@ -45,3 +48,10 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite * :call DeleteTrailingWS()
+
+" Plugins " {{{
+call vundle#rc()
+
+Bundle 'tpope/vim-rails.git'
+Bundle 'scrooloose/nerdtree'
+
