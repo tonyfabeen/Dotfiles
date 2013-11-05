@@ -54,4 +54,10 @@ call vundle#rc()
 
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'tpope/vim-sensible'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kana/vim-fakeclip'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'mileszs/ack.vim'
