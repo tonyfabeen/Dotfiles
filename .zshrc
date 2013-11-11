@@ -12,6 +12,21 @@ ZSH_THEME="tonotdo"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#var aliases
+PROJECTS="$HOME/projects"
+RUBY_PROJECTS="$PROJECTS/ruby"
+JS_PROJECTS="$PROJECTS/javascript"
+
+#GOTO aliases work
+alias projects="cd $PROJECTS"
+alias vagrant_dir="cd $PROJECTS/vagrant"
+alias akatus_rails="cd $RUBY_PROJECTS/akatus"
+alias akatus_js="cd $JS_PROJECTS/akatus.js"
+
+#COMMANDS aliases
+alias be="bundle exec"
+
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -48,4 +63,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/home/tonyfabeen/.rbenv/shims:/home/tonyfabeen/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/tonyfabeen/.local/bin:/home/tonyfabeen/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+

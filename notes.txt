@@ -1,0 +1,19 @@
+#Install Oh My ZSH
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+
+#Install Pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \\
+curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+#Install Vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+vim +BundleInstall +qall
+
+
+#Install RVM
+curl -L https://get.rvm.io | bash -s stable --ruby
+
+#
+https://github.com/mozilla/rust/blob/master/src/etc/vim/syntax/rust.vim
