@@ -16,6 +16,7 @@ ZSH_THEME="tonotdo"
 PROJECTS="$HOME/projects"
 RUBY_PROJECTS="$PROJECTS/ruby"
 JS_PROJECTS="$PROJECTS/javascript"
+GO_PROJECTS="$PROJECTS/go"
 
 #GOTO aliases work
 alias projects="cd $PROJECTS"
@@ -25,6 +26,13 @@ alias akatus_js="cd $JS_PROJECTS/akatus.js"
 
 #COMMANDS aliases
 alias be="bundle exec"
+
+#PATHS
+export GOROOT=$GO_PROJECTS/src/go1.1.2
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$GO_PROJECTS/code
+export PATH=$PATH:$GOPATH/bin
+
 
 
 # Set to this to use case-sensitive completion
