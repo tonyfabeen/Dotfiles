@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is [Roger Leite](https://github.com/rogerleite)'s dot f*** files for Mac and Linux users.
+This is [Tony Fabeen] (https://github.com/tonyfabeen)'s dot f*** files for Mac and Linux users.
 
 ## Vim Instalation
 
@@ -10,18 +10,28 @@ cd ~
 git clone https://github.com/rogerleite/Dotfiles.git
 ```
 
-Than the the submodules
-```sh
-cd Dotfiles
-git submodule init
-git submodule update
+Install Pathogen
+
 ```
-Link it to your .vim and .vimrc and be happy
-```sh
-ln -s ~/Dotfiles/.vim .vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \\
+curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+```
+
+Install Vundle
+```
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+```
+
+Use .vimrc
+
+```
+cd $HOME
 ln -s ~/Dotfiles/.vimrc .vimrc
 ```
 
-## Others
+Get Vundle Dependencies
+```
+vim +BundleInstall +qall
+```
 
-TODO someday
+
