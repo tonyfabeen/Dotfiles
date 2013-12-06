@@ -1,13 +1,13 @@
 "Use Vim settings, rather then Vi settings (much better!).
-""This must be first, because it changes other options as a side effect.
+"This must be first, because it changes other options as a side effect.
 set nocompatible
 
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme wombat256mod
-"colorscheme desert
+"colorscheme wombat256mod
+colorscheme desert
 "colorscheme railscasts
 
 set showcmd     "show incomplete cmds down the bottom

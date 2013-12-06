@@ -27,6 +27,7 @@ Use .vimrc
 ```
 cd $HOME
 ln -s ~/Dotfiles/.vimrc .vimrc
+ln -s ~/Dotfiles/.vim/colors ~/.vim/colors
 ```
 
 Get Vundle Dependencies
