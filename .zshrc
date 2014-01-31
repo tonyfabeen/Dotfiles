@@ -5,8 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="tonotdo"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="cypher"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -28,7 +28,8 @@ alias akatus_js="cd $JS_PROJECTS/akatus.js"
 alias be="bundle exec"
 
 #PATHS
-export GOROOT=$GO_PROJECTS/src/go1.1.2
+#export GOROOT=$GO_PROJECTS/src/go1.1.2
+export GOROOT=$GO_PROJECTS/src/go1.2
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$GO_PROJECTS/code
 export PATH=$PATH:$GOPATH/bin
@@ -73,3 +74,5 @@ export PATH=$PATH:/home/tonyfabeen/.rbenv/shims:/home/tonyfabeen/.rbenv/bin:/usr
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
